@@ -6,6 +6,8 @@ TagManager:
   tags:
   - HurtBox
   - HitBox
+  - Attack
+  - ground
   layers:
   - Default
   - TransparentFX
