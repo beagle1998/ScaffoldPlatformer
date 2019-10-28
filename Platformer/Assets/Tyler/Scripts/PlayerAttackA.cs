@@ -26,9 +26,9 @@ public class PlayerAttackA : MonoBehaviour
             Shoot();
         }   
         
-
-
     }
+
+   
 
     void Shoot()
     {
