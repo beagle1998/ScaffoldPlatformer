@@ -9,9 +9,10 @@ public class AttackMove : MonoBehaviour
     public Rigidbody2D rb;
     private int bounce = 0;
 
+    //transform.right* speed;new Vector2(20, 50)
     void Start()
     {
-        rb.velocity=transform.right* speed;
+        rb.velocity = transform.right*speed;
     }
 
     // Update is called once per frame
