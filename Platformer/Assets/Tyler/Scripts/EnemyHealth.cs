@@ -7,8 +7,8 @@ public class EnemyHealth : MonoBehaviour
     // Start is called before the first frame update
     //keep track of enemy health
     //insert collision details here 2?
-    public float maxHealth;
-    public float currentHealth;
+    public float maxHealth=1;
+    public float currentHealth=1;
 
 
     void Start()

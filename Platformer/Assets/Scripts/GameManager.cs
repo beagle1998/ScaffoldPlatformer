@@ -35,6 +35,7 @@ public class GameManager : MonoBehaviour {
         yield return new WaitForSeconds(.5f);
         playerHealth.HealDamage(playerHealth.maxHealth);
         player.transform.position = SpawnPosition.position;
+        player.transform.localScale = new Vector3(1f, 1f);
 
     }
 }

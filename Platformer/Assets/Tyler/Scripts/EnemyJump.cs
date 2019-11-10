@@ -25,7 +25,6 @@ public class EnemyJump : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        Debug.Log("updating");
 
         if (gg.transform.position.y <= base_pos.y)
         {

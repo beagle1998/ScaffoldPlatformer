@@ -43,13 +43,16 @@ public class AttackMove : MonoBehaviour
             enemy.TakeDamage(1);
             
         }
-        if (collision.gameObject.tag =="ground")
-        {
-            rb.velocity = new Vector2(rb.velocity.x, 20);
-        }
-        if (bounce >= 2)
-        {
+        //if (collision.gameObject.tag =="ground")
+       // {
+       //     rb.velocity = new Vector2(rb.velocity.x, 20);
+       // }
+       if (collision.gameObject.tag=="Player")
+       {
             Destroy(gameObject);
+            collision.gameObject.transform.localScale += new Vector3(.1f, .1f);
+            PlayerHealth ph1=collision.gameObject.GetComponent<PlayerHealth>();
+            ph1.HealDamage(1f);
         }
         
     }
