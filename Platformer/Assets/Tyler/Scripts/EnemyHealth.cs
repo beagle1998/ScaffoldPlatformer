@@ -8,7 +8,7 @@ public class EnemyHealth : MonoBehaviour
     //keep track of enemy health
     //insert collision details here 2?
     public float maxHealth=1;
-    public float currentHealth=1;
+    private float currentHealth=1;
 
 
     void Start()
