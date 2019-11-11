@@ -9,6 +9,8 @@ public class AttackMove : MonoBehaviour
     public Rigidbody2D rb;
     public int damage_to_enemy=1;
     private int bounce = 0;
+    public float healamount=3f;
+    public float maxScale = 1f;
 
     //transform.right* speed;new Vector2(20, 50)
     void Start()
@@ -21,20 +23,7 @@ public class AttackMove : MonoBehaviour
     {
         
     }
-    //void OnTriggerEnter2D(Collider2D hitinfo)
-    //{
-    //    EnemyHealth enemy = hitinfo.GetComponent<EnemyHealth>();
-    //    if (enemy != null)
-    //    {
-    //        enemy.TakeDamage(1);
-    //        bounce++;
-    //    }
-    //    if (bounce >= 2)
-    //    {
-    //        Destroy(gameObject);
-    //    }
 
-    //}
     private void OnCollisionEnter2D(Collision2D collision)
     {
         //bounce++;
@@ -45,25 +34,28 @@ public class AttackMove : MonoBehaviour
 
         }
 
-        if (collision.gameObject.tag == "Player")
-        {
-            Destroy(gameObject);
-            if (collision.gameObject.transform.localScale.x <= .7f)
-            {
-                collision.gameObject.transform.localScale += new Vector3(.3f, .3f);
-            }
-            else
-            {
-                collision.gameObject.transform.localScale = new Vector3(1f, 1f);
-            }
-            PlayerHealth ph1 = collision.gameObject.GetComponent<PlayerHealth>();
-            ph1.HealDamage(3f);
-
-        }
         //if (collision.gameObject.tag =="ground")
         // {
         //     rb.velocity = new Vector2(rb.velocity.x, 20);
         // }
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Player")
+        {
+            Destroy(gameObject);
+            if (collision.gameObject.transform.localScale.x <= (maxScale-healamount))
+            {
+                collision.gameObject.transform.localScale += new Vector3(healamount, healamount);
+            }
+            else
+            {
+                collision.gameObject.transform.localScale = new Vector3(maxScale, maxScale);
+            }
+            PlayerHealth ph1 = collision.gameObject.GetComponent<PlayerHealth>();
+            ph1.HealDamage(healamount);
+
+        }
     }
 
 

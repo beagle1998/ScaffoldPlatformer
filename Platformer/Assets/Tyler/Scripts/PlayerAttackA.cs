@@ -36,7 +36,7 @@ public class PlayerAttackA : MonoBehaviour
     void Shoot()
     {
         gameObject.transform.localScale -= new Vector3(sizechange, sizechange);
-        attackAPrefab.gameObject.transform.localScale=gameObject.transform.localScale;
+        attackAPrefab.gameObject.transform.localScale=gameObject.transform.localScale*3;
         Instantiate(attackAPrefab,attackPoint.position, attackPoint.rotation);
         
        // if (gameObject.transform.localScale.x <= 1f)
