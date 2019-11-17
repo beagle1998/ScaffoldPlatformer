@@ -6,10 +6,13 @@ public class PlayerAttackA : MonoBehaviour
 {
     // Start is called before the first frame update
     public CharacterController2D controller;
+    public GameObject player1;
     bool attackMove = false;
     public GameObject attackAPrefab;
     public Transform attackPoint;
-
+    public GameManager gameManager;
+    public float damagetaken = 1;
+    public float sizechange = .1f;
     void Start()
     {
         controller = GetComponent<CharacterController2D>();
@@ -32,8 +35,15 @@ public class PlayerAttackA : MonoBehaviour
 
     void Shoot()
     {
-        Instantiate(attackAPrefab, attackPoint.position, attackPoint.rotation);
-        gameObject.transform.localScale -=  new Vector3(.1f,.1f);
+        gameObject.transform.localScale -= new Vector3(sizechange, sizechange);
+        attackAPrefab.gameObject.transform.localScale=gameObject.transform.localScale;
+        Instantiate(attackAPrefab,attackPoint.position, attackPoint.rotation);
+        
+       // if (gameObject.transform.localScale.x <= 1f)
+        //{
+        PlayerHealth ph1 = player1.GetComponent<PlayerHealth>();
+        ph1.TakeDamage(damagetaken);
+       // }
     }
     //gameObject.transform.localScale and vector2
 
