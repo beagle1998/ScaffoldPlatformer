@@ -8,6 +8,7 @@ TagManager:
   - HitBox
   - Attack
   - ground
+  - DeadZone
   layers:
   - Default
   - TransparentFX

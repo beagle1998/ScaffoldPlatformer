@@ -25,7 +25,14 @@ public class DeadZone : MonoBehaviour {
         if(collision.tag == "Player")
         {
             gameManager.GameOver();
+        }    
+        if(collision.tag == "Attack")
+        {
+            var attack_item = collision.gameObject;
+            if(attack_item != null)
+            {
+                Destroy(attack_item);
+            } 
         }
-       
     }
 }

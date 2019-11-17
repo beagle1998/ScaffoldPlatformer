@@ -20,7 +20,10 @@ public class Patrol : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        PatrolArea();
+        if (patrollingGameObject != null)
+        {
+            PatrolArea();
+        }
 	}
 
     //Moves the patrollingGameObject towards patrol location, when reach destination switch to next patrol position in the list
