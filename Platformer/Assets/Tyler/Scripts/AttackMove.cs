@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -38,7 +38,7 @@ public class AttackMove : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         //bounce++;
-        Debug.Log(collision.gameObject.tag);
+        //Debug.Log(collision.gameObject.tag);  for debugging the tag
         EnemyHealth enemy = collision.gameObject.GetComponent<EnemyHealth>();
         if (enemy != null)
         {
