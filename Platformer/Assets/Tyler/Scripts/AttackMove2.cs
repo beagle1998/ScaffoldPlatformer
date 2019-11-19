@@ -2,9 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AttackMove : MonoBehaviour
+public class AttackMove2 : MonoBehaviour
 {
     // Start is called before the first frame update
+    //THIS ATTACK WILL COLLIDE WITH PLAYER
+
     public float speed = 20f;
     public Rigidbody2D rb;
     public int damage_to_enemy=1;
@@ -29,23 +31,8 @@ public class AttackMove : MonoBehaviour
     {
         //bounce++;
         //Debug.Log(collision.gameObject.tag);  for debugging the tag
-        EnemyHealth enemy = collision.gameObject.GetComponent<EnemyHealth>();
-        if (enemy != null)
-        {
-            enemy.TakeDamage(damage_to_enemy);
-
-        }
-
-        //if (collision.gameObject.tag =="ground")
-        // {
-        //     rb.velocity = new Vector2(rb.velocity.x, 20);
-        // }
-    }
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
         if (collision.gameObject.tag == "Player")
         {
-            Debug.Log("destroy?");
             Destroy(gameObject);
             if (collision.gameObject.transform.localScale.x <= (maxScale-heal_scale))
             {
@@ -58,7 +45,26 @@ public class AttackMove : MonoBehaviour
             PlayerHealth ph1 = collision.gameObject.GetComponent<PlayerHealth>();
             ph1.HealDamage(healamount);
 
+
+            EnemyHealth enemy = collision.gameObject.GetComponent<EnemyHealth>();
+
+        if (enemy != null)
+        {
+            enemy.TakeDamage(damage_to_enemy);
+
         }
+
+        //if (collision.gameObject.tag =="ground")
+        // {
+        //     rb.velocity = new Vector2(rb.velocity.x, 20);
+        // }
+    }
+
+
+    //private void OnTriggerEnter2D(Collider2D collision)
+   // {
+        
+   //     }
 
         //if (collision.gameObject.tag =="ground")
         // {

@@ -15,8 +15,9 @@ GameObject:
   - component: {fileID: 9145284084634307265}
   - component: {fileID: 5731119880545223690}
   - component: {fileID: -3956585509805774429}
+  - component: {fileID: 3691599180748245356}
   m_Layer: 0
-  m_Name: AttackA
+  m_Name: AttackA2
   m_TagString: Attack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31,7 +32,7 @@ Transform:
   m_GameObject: {fileID: 5195922703743400188}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -11.518, y: -1.474, z: -19.183722}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -113,7 +114,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5195922703743400188}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a5766cdb2e25e6b459a4f37d27aa1f0d, type: 3}
   m_Name: 
@@ -131,10 +132,10 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5195922703743400188}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.00077164173, y: -0.00079864264}
@@ -196,4 +197,22 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.34817138
+  m_Radius: 0.47102064
+--- !u!114 &3691599180748245356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5195922703743400188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f0ae2f055d2ab74b8d462103d370463, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 40
+  rb: {fileID: 6383125412527193448}
+  damage_to_enemy: 1
+  healamount: 1
+  heal_scale: 0.1
+  maxScale: 1

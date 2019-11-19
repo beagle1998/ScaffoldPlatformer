@@ -19,6 +19,7 @@ public class PlayerHealth : MonoBehaviour {
     public GameManager gameManager;
     private SpriteRenderer playerSprite;
     private CharacterController2D characterController2D;
+    public float sizechange = .1f;
 
     void Start () {
         currentHealth = maxHealth; //At start of scene, player gets max health
@@ -32,7 +33,7 @@ public class PlayerHealth : MonoBehaviour {
     {
         if (!characterController2D.m_Immune)
         {
-
+            gameObject.transform.localScale -= new Vector3(damage/10, damage/10);
             currentHealth -= damage;
             float health = currentHealth / maxHealth;
             healthBar.fillAmount = health;
@@ -90,11 +91,11 @@ public class PlayerHealth : MonoBehaviour {
         {
             yield return new WaitForSeconds(.05f);
 
-            if (playerSprite.enabled == true)
-                playerSprite.enabled = false;
+            //if (playerSprite.enabled == true)
+               // playerSprite.enabled = false;
 
-            else
-                playerSprite.enabled = true;
+            //else
+            playerSprite.enabled = true;
         }
     }
 }

@@ -2,9 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class HealthPack : MonoBehaviour
 {
     // Start is called before the first frame update
+    public float heal = 1f;
+    public float maxScale = 1f;
     void Start()
     {
         
@@ -21,17 +24,19 @@ public class HealthPack : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             Destroy(gameObject);
-            if (collision.gameObject.transform.localScale.x <= .7f)
+
+            if (collision.gameObject.transform.localScale.x <= (maxScale - heal/10))
             {
-                collision.gameObject.transform.localScale += new Vector3(.3f, .3f);
+                collision.gameObject.transform.localScale += new Vector3(heal/10, heal/10);
             }
             else
             {
-                collision.gameObject.transform.localScale = new Vector3(1f, 1f);
+                collision.gameObject.transform.localScale = new Vector3(maxScale, maxScale);
             }
             PlayerHealth ph1 = collision.gameObject.GetComponent<PlayerHealth>();
-            ph1.HealDamage(3f);
-            
+            ph1.HealDamage(heal);
+
+
         }
 
     }

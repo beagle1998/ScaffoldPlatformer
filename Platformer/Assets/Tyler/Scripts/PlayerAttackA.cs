@@ -33,10 +33,12 @@ public class PlayerAttackA : MonoBehaviour
 
    
 
-    void Shoot()
+    void Shoot()//everytime shoot is called, adjust attacks scale to players?
     {
-        gameObject.transform.localScale -= new Vector3(sizechange, sizechange);
-        attackAPrefab.gameObject.transform.localScale=gameObject.transform.localScale*3;
+       // gameObject.transform.localScale -= new Vector3(sizechange, sizechange);
+        //gameObject.transform.localScale = player1.gameObject.transform.localScale;
+
+        attackAPrefab.gameObject.transform.localScale=gameObject.transform.localScale/2;
         Instantiate(attackAPrefab,attackPoint.position, attackPoint.rotation);
         
        // if (gameObject.transform.localScale.x <= 1f)
