@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -27,6 +27,7 @@ public class AttackMove : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         //bounce++;
+        //Debug.Log(collision.gameObject.tag);  for debugging the tag
         EnemyHealth enemy = collision.gameObject.GetComponent<EnemyHealth>();
         if (enemy != null)
         {
@@ -56,6 +57,11 @@ public class AttackMove : MonoBehaviour
             ph1.HealDamage(healamount);
 
         }
+
+        //if (collision.gameObject.tag =="ground")
+        // {
+        //     rb.velocity = new Vector2(rb.velocity.x, 20);
+        // }
     }
 
 
