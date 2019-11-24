@@ -34,7 +34,7 @@ public class AttackMove2 : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             Destroy(gameObject);
-            if (collision.gameObject.transform.localScale.x <= (maxScale-heal_scale))
+            if (collision.gameObject.transform.localScale.x <= (maxScale - heal_scale))
             {
                 collision.gameObject.transform.localScale += new Vector3(heal_scale, heal_scale);
             }
@@ -45,8 +45,8 @@ public class AttackMove2 : MonoBehaviour
             PlayerHealth ph1 = collision.gameObject.GetComponent<PlayerHealth>();
             ph1.HealDamage(healamount);
 
-
-            EnemyHealth enemy = collision.gameObject.GetComponent<EnemyHealth>();
+        }
+        EnemyHealth enemy = collision.gameObject.GetComponent<EnemyHealth>();
 
         if (enemy != null)
         {
@@ -70,7 +70,6 @@ public class AttackMove2 : MonoBehaviour
         // {
         //     rb.velocity = new Vector2(rb.velocity.x, 20);
         // }
-    }
-
+    
 
 }
