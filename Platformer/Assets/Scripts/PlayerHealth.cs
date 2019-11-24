@@ -33,7 +33,9 @@ public class PlayerHealth : MonoBehaviour {
     {
         if (!characterController2D.m_Immune)
         {
-            gameObject.transform.localScale -= new Vector3(damage/10, damage/10);
+            //gameObject.transform.localScale -= new Vector3(damage / 10, damage / 10);
+
+            gameObject.transform.localScale -= new Vector3(.1f, .1f);
             currentHealth -= damage;
             float health = currentHealth / maxHealth;
             healthBar.fillAmount = health;

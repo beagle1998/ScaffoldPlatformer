@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour {
 
     public GameObject player; //The player GameObject on the scene
     private Transform SpawnPosition; //The location that the player will spawn
+    public float player_scale = 1f;
 	
     // Use this for initialization
 	void Start () {
@@ -35,7 +36,8 @@ public class GameManager : MonoBehaviour {
         yield return new WaitForSeconds(.5f);
         playerHealth.HealDamage(playerHealth.maxHealth);
         player.transform.position = SpawnPosition.position;
-        player.transform.localScale = new Vector3(1f, 1f);
+
+        player.transform.localScale = new Vector3(player_scale,player_scale);///aded here
 
     }
 }

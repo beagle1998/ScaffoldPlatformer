@@ -146,7 +146,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 0}
   player1: {fileID: 125593930}
-  attackAPrefab: {fileID: 5195922703743400188, guid: abd7d1d50d9f4a3418fede789057c755,
+  attackAPrefab: {fileID: 5195922703743400188, guid: d08d45f330ce4e7458cfa693de0449f6,
     type: 3}
   attackPoint: {fileID: 1055666912}
   gameManager: {fileID: 436640267}
