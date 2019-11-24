@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 9145284084634307265}
   - component: {fileID: 5731119880545223690}
   - component: {fileID: -3956585509805774429}
+  - component: {fileID: -204823418375192937}
   m_Layer: 0
   m_Name: AttackA
   m_TagString: Attack
@@ -30,8 +31,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5195922703743400188}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+<<<<<<< Updated upstream
   m_LocalPosition: {x: -11.518, y: -1.474, z: -19.183722}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0}
+=======
+  m_LocalPosition: {x: -11.493562, y: -1.3331058, z: -19.183722}
+  m_LocalScale: {x: 0.9, y: 0.9, z: 0}
+>>>>>>> Stashed changes
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -197,3 +203,21 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.34817138
+--- !u!114 &-204823418375192937
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5195922703743400188}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f0ae2f055d2ab74b8d462103d370463, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 40
+  rb: {fileID: 6383125412527193448}
+  damage_to_enemy: 1
+  healamount: 1
+  heal_scale: 0.1
+  maxScale: 1
