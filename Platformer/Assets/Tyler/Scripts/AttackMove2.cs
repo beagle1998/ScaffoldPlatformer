@@ -51,10 +51,11 @@ public class AttackMove2 : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
    {
-     heal_scale = maxScale / maxHealth;//about one point of damage equivalent to size
-
-     if (collision.gameObject.tag == "Player")
+        heal_scale = maxScale / maxHealth;//about one point of damage equivalent to size
+    
+        if (collision.gameObject.tag == "Player")
         {
+            Debug.Log("player touch");
             Destroy(gameObject);
             if (collision.gameObject.transform.localScale.x <= (maxScale - heal_scale))
             {

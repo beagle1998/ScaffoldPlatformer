@@ -146,7 +146,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 0}
   player1: {fileID: 125593930}
-  attackAPrefab: {fileID: 5195922703743400188, guid: abd7d1d50d9f4a3418fede789057c755,
+  attackAPrefab: {fileID: 5195922703743400188, guid: d08d45f330ce4e7458cfa693de0449f6,
     type: 3}
   attackPoint: {fileID: 1055666912}
   gameManager: {fileID: 0}
@@ -10199,7 +10199,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.519997, y: -3.1083531, z: -10}
+  m_LocalPosition: {x: -6.519998, y: -3.1083531, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -11319,17 +11319,17 @@ PrefabInstance:
       propertyPath: gameManager
       value: 
       objectReference: {fileID: 436640267}
-    - target: {fileID: 114421021764413650, guid: 5039a551e8afdea41b5b04561da1d70a,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 212441263472878830, guid: 5039a551e8afdea41b5b04561da1d70a,
         type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 0fe707fb3381bf148b6905915337dc06,
         type: 3}
+    - target: {fileID: 114421021764413650, guid: 5039a551e8afdea41b5b04561da1d70a,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5039a551e8afdea41b5b04561da1d70a, type: 3}
 --- !u!4 &1755238727 stripped
@@ -11501,11 +11501,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 224715772407969718, guid: 0c60fa36e5c69e64689817e4feb2f021,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 114957745787536978, guid: 0c60fa36e5c69e64689817e4feb2f021,
         type: 3}
       propertyPath: m_Sprite
@@ -11541,6 +11536,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SizeDelta.y
       value: 6.565
+      objectReference: {fileID: 0}
+    - target: {fileID: 224715772407969718, guid: 0c60fa36e5c69e64689817e4feb2f021,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224554587096871164, guid: 0c60fa36e5c69e64689817e4feb2f021,
         type: 3}
