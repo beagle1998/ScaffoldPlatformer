@@ -44,9 +44,9 @@ public class Patrol : MonoBehaviour {
     {
         Vector2 localScale = patrollingGameObject.transform.localScale;
         if (patrollingGameObject.transform.position.x - patrolLocations[nextPatrolLocation].position.x > 0)
-            localScale.x = 1;
+            localScale.x = patrollingGameObject.transform.localScale.x;
         else
-            localScale.x = -1;
+            localScale.x = -(patrollingGameObject.transform.localScale.x);
         patrollingGameObject.transform.localScale = localScale;
     }
 }
