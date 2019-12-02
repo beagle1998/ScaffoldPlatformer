@@ -9,6 +9,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: af2467a16717b9e42b49bc1c1c9d226a
   - enabled: 1
+    path: Assets/Scenes/Prompt_scene.unity
+    guid: 5b86f53f2c2f287489b91ebc51964a96
+  - enabled: 1
     path: Assets/Scenes/april.unity
     guid: 18cb1693462be428f9eb41fd6a744d02
+  - enabled: 1
+    path: Assets/Scenes/End_scene.unity
+    guid: ae24db57cee190c45bd0ac3fd8fa14da
   m_configObjects: {}
