@@ -18,7 +18,7 @@ public class Pseudo_Character : MonoBehaviour
     private void FixedUpdate()
     {
         
-        if (player1.transform.position.y <= (snail.transform.position.y + 10f) & player1.transform.position.y >= old_y_position)
+        if (player1.transform.position.y <= (snail.transform.position.y + 0.5f) & player1.transform.position.y >= old_y_position)
         {
             gameObject.transform.position = new Vector2(gameObject.transform.position.x, player1.transform.position.y);
         }

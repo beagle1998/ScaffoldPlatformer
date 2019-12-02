@@ -308,6 +308,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 125593930}
+  player_scale: 1
 --- !u!4 &436640268
 Transform:
   m_ObjectHideFlags: 0
@@ -2632,11 +2633,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4547596144822794, guid: dda7916924b759248bf4647e57f00af7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.39
+      value: -4.23
       objectReference: {fileID: 0}
     - target: {fileID: 4547596144822794, guid: dda7916924b759248bf4647e57f00af7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.52
+      value: -5.06
       objectReference: {fileID: 0}
     - target: {fileID: 4547596144822794, guid: dda7916924b759248bf4647e57f00af7, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2690,7 +2691,8 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114140910938686034, guid: dda7916924b759248bf4647e57f00af7, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: dda7916924b759248bf4647e57f00af7, type: 3}
 --- !u!1 &704561121 stripped
 GameObject:
@@ -2707,11 +2709,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 704561121}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a3d42397c41e2047be996e9304e14a6, type: 3}
+  m_Script: {fileID: 11500000, guid: 38d63ef1ce7dc4247a7c0f2f3b21caeb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   player1: {fileID: 125593930}
   snail: {fileID: 704561121}
+  moveSpeed: 2
 --- !u!224 &801045291 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 224608292082606182, guid: 0c60fa36e5c69e64689817e4feb2f021,
