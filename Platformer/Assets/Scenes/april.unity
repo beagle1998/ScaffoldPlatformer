@@ -94759,7 +94759,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.9375, y: 0.875}
   m_EdgeRadius: 0
-<<<<<<< Updated upstream
 --- !u!4 &756576483 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4547596144822794, guid: dda7916924b759248bf4647e57f00af7,
@@ -94778,48 +94777,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2088142386}
   m_PrefabAsset: {fileID: 0}
-=======
---- !u!1 &738810155 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1713705236498936, guid: dda7916924b759248bf4647e57f00af7,
-    type: 3}
-  m_PrefabInstance: {fileID: 101866922}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &738810156
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 738810155}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a3d42397c41e2047be996e9304e14a6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player1: {fileID: 125593930}
-  snail: {fileID: 738810155}
---- !u!1 &763890812 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1713705236498936, guid: dda7916924b759248bf4647e57f00af7,
-    type: 3}
-  m_PrefabInstance: {fileID: 1894547415}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &763890813
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 763890812}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a3d42397c41e2047be996e9304e14a6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player1: {fileID: 125593930}
-  snail: {fileID: 763890812}
->>>>>>> Stashed changes
 --- !u!1001 &792828544
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -97908,7 +97865,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.9375, y: 0.875}
   m_EdgeRadius: 0
-<<<<<<< Updated upstream
 --- !u!1 &1575115726
 GameObject:
   m_ObjectHideFlags: 0
@@ -97927,21 +97883,10 @@ GameObject:
   m_IsActive: 1
 --- !u!4 &1575115727
 Transform:
-=======
---- !u!1 &1578870958 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1713705236498936, guid: dda7916924b759248bf4647e57f00af7,
-    type: 3}
-  m_PrefabInstance: {fileID: 888086200}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1578870959
-MonoBehaviour:
->>>>>>> Stashed changes
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< Updated upstream
   m_GameObject: {fileID: 1575115726}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 31.581285, y: -26.838987, z: -139.14102}
@@ -97952,16 +97897,6 @@ MonoBehaviour:
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-=======
-  m_GameObject: {fileID: 1578870958}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a3d42397c41e2047be996e9304e14a6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player1: {fileID: 125593930}
-  snail: {fileID: 1578870958}
->>>>>>> Stashed changes
 --- !u!1 &1606836221 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1702214341717730, guid: dda7916924b759248bf4647e57f00af7,
@@ -98246,7 +98181,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.9375, y: 0.875}
   m_EdgeRadius: 0
-<<<<<<< Updated upstream
 --- !u!1 &1628383257
 GameObject:
   m_ObjectHideFlags: 0
@@ -98280,21 +98214,10 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1628383259
 SpriteRenderer:
-=======
---- !u!1 &1627265313 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1713705236498936, guid: dda7916924b759248bf4647e57f00af7,
-    type: 3}
-  m_PrefabInstance: {fileID: 1679664067}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1627265314
-MonoBehaviour:
->>>>>>> Stashed changes
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< Updated upstream
   m_GameObject: {fileID: 1628383257}
   m_Enabled: 1
   m_CastShadows: 0
@@ -98338,16 +98261,6 @@ MonoBehaviour:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
-=======
-  m_GameObject: {fileID: 1627265313}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a3d42397c41e2047be996e9304e14a6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player1: {fileID: 125593930}
-  snail: {fileID: 1627265313}
->>>>>>> Stashed changes
 --- !u!1 &1641853794
 GameObject:
   m_ObjectHideFlags: 0
@@ -98640,7 +98553,6 @@ PrefabInstance:
         type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 527b8d56050ab904693d99f56fe4dae8, type: 3}
-<<<<<<< Updated upstream
 --- !u!1 &1706027506
 GameObject:
   m_ObjectHideFlags: 0
@@ -98674,21 +98586,10 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1706027508
 SpriteRenderer:
-=======
---- !u!1 &1708784152 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1713705236498936, guid: dda7916924b759248bf4647e57f00af7,
-    type: 3}
-  m_PrefabInstance: {fileID: 2088142386}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1708784153
-MonoBehaviour:
->>>>>>> Stashed changes
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< Updated upstream
   m_GameObject: {fileID: 1706027506}
   m_Enabled: 1
   m_CastShadows: 0
@@ -98738,16 +98639,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1006936605}
   m_PrefabAsset: {fileID: 0}
-=======
-  m_GameObject: {fileID: 1708784152}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a3d42397c41e2047be996e9304e14a6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player1: {fileID: 125593930}
-  snail: {fileID: 1708784152}
->>>>>>> Stashed changes
 --- !u!1001 &1720713813
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -99216,35 +99107,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< Updated upstream
 --- !u!4 &1799929734 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4547596144822794, guid: dda7916924b759248bf4647e57f00af7,
     type: 3}
   m_PrefabInstance: {fileID: 946378060}
   m_PrefabAsset: {fileID: 0}
-=======
---- !u!1 &1794588909 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1713705236498936, guid: dda7916924b759248bf4647e57f00af7,
-    type: 3}
-  m_PrefabInstance: {fileID: 292694011}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1794588910
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1794588909}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a3d42397c41e2047be996e9304e14a6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player1: {fileID: 125593930}
-  snail: {fileID: 1794588909}
->>>>>>> Stashed changes
 --- !u!1 &1802494675
 GameObject:
   m_ObjectHideFlags: 0
@@ -105049,35 +104917,12 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.9375, y: 0.875}
   m_EdgeRadius: 0
-<<<<<<< Updated upstream
 --- !u!4 &1838899874 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4547596144822794, guid: dda7916924b759248bf4647e57f00af7,
     type: 3}
   m_PrefabInstance: {fileID: 425691321}
   m_PrefabAsset: {fileID: 0}
-=======
---- !u!1 &1834394816 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1713705236498936, guid: dda7916924b759248bf4647e57f00af7,
-    type: 3}
-  m_PrefabInstance: {fileID: 425691321}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1834394817
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1834394816}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a3d42397c41e2047be996e9304e14a6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player1: {fileID: 125593930}
-  snail: {fileID: 1834394816}
->>>>>>> Stashed changes
 --- !u!1001 &1867396104
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -106055,7 +105900,6 @@ PrefabInstance:
         type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dda7916924b759248bf4647e57f00af7, type: 3}
-<<<<<<< Updated upstream
 --- !u!1 &2052285920
 GameObject:
   m_ObjectHideFlags: 0
@@ -106074,21 +105918,10 @@ GameObject:
   m_IsActive: 1
 --- !u!4 &2052285921
 Transform:
-=======
---- !u!1 &2040769623 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1713705236498936, guid: dda7916924b759248bf4647e57f00af7,
-    type: 3}
-  m_PrefabInstance: {fileID: 814330053}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2040769624
-MonoBehaviour:
->>>>>>> Stashed changes
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< Updated upstream
   m_GameObject: {fileID: 2052285920}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 4.9227104, y: -2.0985184, z: 1}
@@ -106110,16 +105943,6 @@ MonoBehaviour:
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-=======
-  m_GameObject: {fileID: 2040769623}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a3d42397c41e2047be996e9304e14a6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player1: {fileID: 125593930}
-  snail: {fileID: 2040769623}
->>>>>>> Stashed changes
 --- !u!1001 &2088142386
 PrefabInstance:
   m_ObjectHideFlags: 0
